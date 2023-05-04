@@ -1,0 +1,138 @@
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.header-image-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-image-block span {
+  color: black;
+  display: block;
+  font-weight: 500;
+  color:#252150;
+  color: white;
+}
+
+.header-img{
+  width: 60px;
+}
+
+.navigation {
+  display: flex;
+  gap: 50px;
+}
+
+.link {
+  transition: all 0.5s;
+  color: white;
+}
+
+.link:hover {
+  opacity: 0.5;
+}
+
+.linkActive {
+  opacity: 0.5;
+  transition: all 0.5s;
+  color: white;
+}
+
+@media (max-width:1020px) {
+  .navigation-items-block{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: -200vw; 
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition: all 0.5s;
+ }
+  .navigation {
+    flex-direction: column;
+    gap: 30px;
+    transition: all 0.5s;
+    height: 100vh;
+    background-color: 	#23213A;
+    padding: 50px 200px 0 50px;
+    box-shadow: -5px 0 10px 1px #040310;
+  }
+  .open{
+    right: 0;
+    transition: all 0.5s;
+  }
+  .block {
+    overflow: hidden;;
+  }
+  .button-x {
+    position: relative;
+    z-index: 15;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .button-item {
+    width: 100%;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    transition: all 0.2s;
+  }
+  .button-item::after {
+    content: "";
+    left: 0;
+    top: 10px;
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    transition: all 0.2s;
+  }
+  .button-item::before {
+    content: "";
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    transition: all 0.2s;
+  }
+  .button-open {
+    transform: rotate(180deg);
+    transition: all 0.2s;
+    height: 0;
+  }
+  .button-open::after {
+    transform: rotate(45deg);
+    transition: all 0.2s;
+    width: 70%;
+    top: 6px;
+
+  }
+  .button-open::before {
+    transform: rotate(-45deg);
+    transition: all 0.2s;
+    width: 70%;
+    bottom: 6px;
+  }
+}
+
+@media (min-width:1020px) {
+  .button-x {
+    display: none;
+  }
+}

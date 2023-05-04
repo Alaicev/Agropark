@@ -1,0 +1,6 @@
+.about-container {
+  color: #F2F1FF;
+  background-color: rgb(31, 31, 53);
+  position: relative;
+  z-index: 6;
+}

@@ -1,0 +1,83 @@
+.services {
+  padding: 80px 0 100px ;
+}
+
+.services-title{
+  font-size: 1.6rem;
+  margin-bottom: 50px;
+  color: #F2F1FF;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  color: #F2F1FF;
+}
+
+.services-item{
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(30, 25, 35, 0.747);
+  backdrop-filter: blur(5px);
+
+}
+
+.image-block {
+  width: 100%;
+  height: 350px;
+  background-color: aquamarine;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.services-item:nth-child(1) .image-block {
+  background-image: url(./../../assets/image/razrab2.jpg);
+}
+
+.services-item:nth-child(2) .image-block {
+  background-image: url(./../../assets/image/laser-cut-details.jpg);
+}
+
+.services-item:nth-child(4) .image-block {
+  background-image: url(./../../assets/image/agroboty.jpg);
+}
+
+.services-item:nth-child(3) .image-block {
+  background-image: url(./../../assets/image/Laser-market.jpg);
+}
+
+.services-item:nth-child(5) .image-block {
+  background-image: url(./../../assets/image/protophoto.jpg);
+}
+
+.services-item{
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.services-text-block{
+  width: 100%;
+}
+
+.services-text{
+  font-size: 1.2rem;
+}
+
+.services-name{
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width:1000px) {
+  .services-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .services-item:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,34 @@
+.createPost-container{
+    margin: 50px auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    padding: 40px;
+    color: white;
+}
+
+.file{
+    display: none
+}
+
+.remove {
+    background-color: red;
+    color: black;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.title-container{
+    margin: 50px 0;
+}
+
+.title-input {
+    color: white;
+}
+.text-input-container{
+    background-color: white;
+}
+
+.button-submit{
+    margin-top: 50px;
+}

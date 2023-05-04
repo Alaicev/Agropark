@@ -1,0 +1,93 @@
+.news-container {
+    padding: 40px;
+}
+
+.news-title {
+    font-size: 30px;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.news-items {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.newItem{
+    position: relative;
+}
+
+.newsItem {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+}
+
+.newsImage {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 118, 0, 0.1);
+    border-radius: 20px;
+}
+
+.button-delete{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: -30px;
+    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    z-index: 4;
+}
+
+.bitton-put{
+    top: 40px
+}
+
+
+.news-button{
+    background: transparent;
+}
+
+.newsItem-title {
+    font-size: 30px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.newsItem-text{
+    font-size: 22px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.clouse {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.post-create-but {
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 864px) {
+    .newsItem {
+     display: flex;
+        flex-direction: column;
+    }
+    .newsImage{
+        height: 50vw;
+    }
+}
+

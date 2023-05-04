@@ -1,0 +1,39 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.foorer-title {
+  color: #F2F1FF;
+}
+
+.footer-center img,
+.footer-logo,
+.soc-link img
+{
+  height: 60px;
+}
+
+.soc-link img
+{
+  height: 40px;
+}
+
+.footer-center{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.social-block{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 864px){
+  .footer-container{
+    flex-direction: column;
+  }
+}
