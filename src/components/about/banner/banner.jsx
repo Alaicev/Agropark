@@ -2,6 +2,7 @@ import React from "react";
 import "./bunner.css"
 import "./../../../App.css"
 import BannerItem from "./BannerItem/BannerItem";
+import Preloader from "./preloader/preloader";
 
 const Banner = (p) =>  {
 
@@ -19,7 +20,7 @@ const Banner = (p) =>  {
         <div className="banner-container" style={banTrans}>
           <div className="banner-image">1</div>
           <div className="banner-image">
-              <BannerItem item={isLoading? '':posts[posts.length-1]}/>
+              {isLoading ? <Preloader /> : <BannerItem item={isLoading ? '':posts[posts.length-1]}/>}
           </div>
           <div className="banner-image">3</div>
         </div>

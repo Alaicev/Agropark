@@ -23,6 +23,9 @@ html{
   margin: 0 auto;
 
 }
+body{
+  overflow-x: hidden;
+}
 
 .header {
   font-weight: 700;
